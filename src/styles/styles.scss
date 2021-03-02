@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@font-face {
+  font-family: suprema;
+  src: url('../fonts/suprema.woff') format('woff'),
+    url('../fonts/suprema.woff2') format('woff2');
+}
+
+$bodyBackground: rgba(229, 229, 229, 1);
+$whiteColor: rgba(255, 255, 255, 1);
+$borderLeftBarColor: rgba(248, 248, 248, 1);
+$menuItemsColor: rgba(199, 199, 199, 1);
+$menuItemsActiveColor: rgba(25, 123, 189, 1);
+$menuItemsActiveBackgroundColor: rgba(240, 247, 255, 1);
+$blackTextColor: rgba(64, 64, 64, 1);
+$greyTextColor: rgba(174, 174, 174, 1);
+$greyTableTextColor: rgba(199, 199, 199, 1);
+$balanceTextColor: rgba(25, 123, 189, 1);
+$incomeTextColor: rgba(67, 154, 134, 1);
+$outcomeTextColor: rgba(187, 68, 48, 1);
+$chekboxColor: rgba(205, 205, 205, 1);
+$chekboxBodyColor: rgba(235, 235, 235, 1);
+$cardBackgroundColor: linear-gradient(180deg, #197bbd 0%, #3391d0 100%);
+$cardProgressBarColor: rgba(25, 123, 189, 1);
+$cardProgressBarBackgroundColor: rgba(241, 241, 241, 1);
+$cardGreyTextColor: rgba(255, 255, 255, 0.39);
+$btnColor: rgba(255, 193, 69, 1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bodyBackground;
+  font-family: 'Lato', sans-serif;
+}
+
+.dashboard {
+  max-width: 1476.59px;
+  background-color: $whiteColor;
+  border-radius: 59px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
