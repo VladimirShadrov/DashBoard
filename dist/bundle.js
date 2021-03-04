@@ -45,7 +45,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n/* harmony import */ var _styles_right_bar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/right-bar.scss */ \"./styles/right-bar.scss\");\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -3952,6 +3952,21 @@ eval("__webpack_require__(/*! ../modules/web.timers */ \"../node_modules/core-js
 
 /***/ }),
 
+/***/ "./images/admin-img.svg":
+/*!******************************!*\
+  !*** ./images/admin-img.svg ***!
+  \******************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/admin-img.svg\");\n\n//# sourceURL=webpack:///./images/admin-img.svg?");
+
+/***/ }),
+
 /***/ "./images/cloud.svg":
 /*!**************************!*\
   !*** ./images/cloud.svg ***!
@@ -4041,6 +4056,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./styles/right-bar.scss":
+/*!*******************************!*\
+  !*** ./styles/right-bar.scss ***!
+  \*******************************/
+/*! namespace exports */
+/*! exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/right-bar.scss?");
+
+/***/ }),
+
 /***/ "./styles/styles.scss":
 /*!****************************!*\
   !*** ./styles/styles.scss ***!
@@ -4090,7 +4119,7 @@ eval("var map = {\n\t\"./suprema.woff\": \"./fonts/suprema.woff\",\n\t\"./suprem
 /*! runtime requirements: module, __webpack_require__.o, __webpack_require__ */
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./cloud.svg\": \"./images/cloud.svg\",\n\t\"./logo-image.svg\": \"./images/logo-image.svg\",\n\t\"./logo.png\": \"./images/logo.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
+eval("var map = {\n\t\"./admin-img.svg\": \"./images/admin-img.svg\",\n\t\"./cloud.svg\": \"./images/cloud.svg\",\n\t\"./logo-image.svg\": \"./images/logo-image.svg\",\n\t\"./logo.png\": \"./images/logo.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
 
 /***/ })
 

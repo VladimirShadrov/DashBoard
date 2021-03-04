@@ -1,5 +1,6 @@
 import '../styles/styles.scss';
 import '../styles/left-bar.scss';
+import '../styles/right-bar.scss';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
