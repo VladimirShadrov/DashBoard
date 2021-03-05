@@ -1,18 +1,24 @@
 @import './styles.scss';
 
 .left-bar {
-  padding: 60.4px 38.34px 32.97px 40.54px;
+  padding: 60.4px 10px 32.97px 40.54px;
   border-right: 1px solid $borderLeftBarColor;
   width: 17%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
   transition: 0.3s;
 
   &__cloud {
     width: 100%;
-    margin-top: 283px;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 40px;
   }
 
   &__cloud-img {
@@ -37,6 +43,7 @@
 
   &__btn {
     background-color: $btnColor;
+    max-width: 165px;
     border: none;
     border-radius: 14px;
     padding: 13.47px 18.83px;
@@ -50,6 +57,7 @@
 
   &__open,
   &__close {
+    display: none;
     position: absolute;
     top: 42px;
     right: -50px;
@@ -166,4 +174,54 @@
     height: 17px;
     margin-right: 17.92px;
   }
+}
+
+@media (max-width: 1270px) {
+  .left-bar__btn {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .left-bar__cloud {
+    padding-right: 0;
+  }
+
+  .menu__image {
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .left-bar {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 970px) {
+  .left-bar {
+    transform: translateX(-100%);
+    width: 251px;
+  }
+
+  .left-bar__open,
+  .left-bar__close {
+    display: block;
+  }
+}
+
+@media (max-width: 870px) {
+  // .logo,
+  // .menu,
+  // .left-bar__cloud,
+  // .left-bar__btn {
+  //   opacity: 0;
+  // }
+
+  // .left-bar {
+  //   width: 0;
+  // }
 }

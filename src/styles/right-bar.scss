@@ -6,85 +6,16 @@
   align-self: stretch;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__left-bar {
-    width: 39%;
+@media (max-width: 950px) {
+  .dashboard__right-bar {
+    width: 100%;
   }
+}
 
-  &__title {
-    font-family: suprema;
-    font-size: 43.37px;
-    color: $blackTextColor;
-    line-height: 53px;
-    font-weight: 600;
-  }
-
-  &__summary {
-    font-size: 16px;
-    color: $greyTextColor;
-  }
-
-  &__right-bar {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  &__message,
-  &__bell {
-    color: $notificationsColor;
-    width: 20px;
-    height: 16px;
-    margin-right: 25px;
-    cursor: pointer;
-
-    & > i {
-      pointer-events: none;
-    }
-  }
-
-  &__bell {
-    position: relative;
-
-    & > span {
-      position: absolute;
-      top: 1px;
-      right: 4px;
-      display: block;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: rgba(187, 68, 48, 1);
-    }
-  }
-
-  &__admin {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  &__admin-image {
-    width: 35px;
-    height: 35px;
-    background-color: rgba(255, 193, 69, 1);
-    border-radius: 50%;
-    margin-right: 9px;
-  }
-
-  &__admin-name,
-  &__admin-account {
-    font-family: suprema;
-    font-size: 14px;
-    color: $blackTextColor;
-  }
-
-  &__admin-account {
-    color: $greyTextColor;
+@media (max-width: 620px) {
+  .dashboard__right-bar {
+    // padding-right: 20px;
+    // padding-left: 15px;
+    padding: 20px;
   }
 }
