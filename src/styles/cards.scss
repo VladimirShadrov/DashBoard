@@ -1,0 +1,302 @@
+@import './styles.scss';
+
+.cards {
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 28px;
+  padding-bottom: 36px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 20.11px;
+    line-height: 24.77px;
+    padding: 14px 24.64px 13px 24.64px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__left-bar {
+    width: 67%;
+    padding-left: 36px;
+    padding-right: 41px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      right: 0;
+      height: 200px;
+      width: 1px;
+      background-color: rgba(232, 232, 232, 1);
+    }
+  }
+
+  &__card-wrapper {
+    overflow: hidden;
+    width: 100%;
+    min-height: 206.17px;
+    position: relative;
+    border-radius: 26px;
+    margin-bottom: 32px;
+    box-shadow: 0px 17px 18px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 9.63px;
+    height: 19.27px;
+    position: absolute;
+    top: 96px;
+    cursor: pointer;
+
+    & > img {
+      width: 100%;
+      pointer-events: none;
+    }
+  }
+
+  &__btn-prev {
+    left: 17px;
+  }
+
+  &__btn-next {
+    right: 22px;
+  }
+
+  &__band {
+    width: 300%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__card {
+    width: calc(100% / 3);
+    padding: 20.38px 49.5px 21px 20.89px;
+    background: $cardBackgroundColor;
+    border-radius: 26px;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  &__card-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__card-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16.75px;
+    font-weight: 700;
+    line-height: 20.93px;
+    color: $whiteColor;
+  }
+
+  &__premium-account {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 8.11px;
+    line-height: 9.74px;
+    color: rgba(255, 255, 255, 0.39);
+    margin-bottom: 46.18px;
+  }
+
+  &__card-number {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 31.85px;
+
+    & > span {
+      display: inline-block;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 21.49px;
+      font-weight: 500;
+      line-height: 26.86px;
+      color: $whiteColor;
+    }
+  }
+
+  &__card-holder {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__card-holder-item {
+    width: 30%;
+    margin-right: 45px;
+    color: $whiteColor;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__card-holder-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 7.18px;
+    font-weight: 500;
+    line-height: 8.61px;
+    margin-bottom: 5.8px;
+  }
+
+  &__card-holder-value {
+    font-family: 'Lato', sans-serif;
+    font-size: 12.62px;
+    font-weight: 500;
+    line-height: 15.14px;
+    color: $whiteColor;
+  }
+
+  &__progress {
+    width: 100%;
+    height: 9.47px;
+    background-color: $cardProgressBarBackgroundColor;
+    border-radius: 13.62px;
+    position: relative;
+    margin-bottom: 10.62px;
+  }
+
+  &__progress-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-radius: 13.62px;
+    width: 23.3%;
+    background-color: rgba(25, 123, 189, 1);
+  }
+
+  &__limit-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__limit-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.24px;
+    color: $greyTextColor;
+  }
+
+  &__balance-item {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color: $blackTextColor;
+  }
+
+  &__right-bar {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 28.28px;
+  }
+
+  &__current-balance-item {
+    text-align: right;
+    margin-bottom: 27.89px;
+
+    &:last-child {
+      margin-top: 36px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__current-balance-currency,
+  &__income-currency,
+  &__imcome-value,
+  &__outcome-currency,
+  &__outcome-value {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  &__current-balance-currency,
+  &__current-balance-value {
+    color: $cardProgressBarColor;
+  }
+
+  &__current-balance-value {
+    font-family: 'Lato', sans-serif;
+    font-size: 31.55px;
+    font-weight: bold;
+    line-height: 37.86px;
+  }
+
+  &__income-currency,
+  &__imcome-value {
+    color: $incomeTextColor;
+  }
+
+  &__outcome-currency,
+  &__outcome-value {
+    color: $outcomeTextColor;
+  }
+
+  &__balance-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.24px;
+    color: $greyTextColor;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox-style {
+    width: 45.69px;
+    height: 23.45px;
+    background: $chekboxBodyColor;
+    border-radius: 13.617px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 23.45px;
+      height: 23.45px;
+      border-radius: 50%;
+      background-color: $chekboxColor;
+      transition: 0.3s;
+    }
+  }
+
+  &__checkbox:checked ~ &__checkbox-style {
+    background-color: rgba(25, 123, 189, 0.5);
+  }
+
+  &__checkbox:checked ~ &__checkbox-style::before {
+    background-color: rgba(25, 123, 189, 1);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: calc(100% - 23.45px);
+  }
+}

@@ -45,7 +45,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n/* harmony import */ var _styles_right_bar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/right-bar.scss */ \"./styles/right-bar.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n/* harmony import */ var _styles_right_bar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/right-bar.scss */ \"./styles/right-bar.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_main_page_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main-page.scss */ \"./styles/main-page.scss\");\n/* harmony import */ var _styles_cards_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/cards.scss */ \"./styles/cards.scss\");\n\n\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -3967,6 +3967,51 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./images/btn-next.svg":
+/*!*****************************!*\
+  !*** ./images/btn-next.svg ***!
+  \*****************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/btn-next.svg\");\n\n//# sourceURL=webpack:///./images/btn-next.svg?");
+
+/***/ }),
+
+/***/ "./images/btn-prev.svg":
+/*!*****************************!*\
+  !*** ./images/btn-prev.svg ***!
+  \*****************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/btn-prev.svg\");\n\n//# sourceURL=webpack:///./images/btn-prev.svg?");
+
+/***/ }),
+
+/***/ "./images/card-image.png":
+/*!*******************************!*\
+  !*** ./images/card-image.png ***!
+  \*******************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/card-image.png\");\n\n//# sourceURL=webpack:///./images/card-image.png?");
+
+/***/ }),
+
 /***/ "./images/cloud.svg":
 /*!**************************!*\
   !*** ./images/cloud.svg ***!
@@ -4042,6 +4087,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./styles/cards.scss":
+/*!***************************!*\
+  !*** ./styles/cards.scss ***!
+  \***************************/
+/*! namespace exports */
+/*! exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/cards.scss?");
+
+/***/ }),
+
 /***/ "./styles/header.scss":
 /*!****************************!*\
   !*** ./styles/header.scss ***!
@@ -4067,6 +4126,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/left-bar.scss?");
+
+/***/ }),
+
+/***/ "./styles/main-page.scss":
+/*!*******************************!*\
+  !*** ./styles/main-page.scss ***!
+  \*******************************/
+/*! namespace exports */
+/*! exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/main-page.scss?");
 
 /***/ }),
 
@@ -4133,7 +4206,7 @@ eval("var map = {\n\t\"./suprema.woff\": \"./fonts/suprema.woff\",\n\t\"./suprem
 /*! runtime requirements: module, __webpack_require__.o, __webpack_require__ */
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./admin-img.svg\": \"./images/admin-img.svg\",\n\t\"./cloud.svg\": \"./images/cloud.svg\",\n\t\"./logo-image.svg\": \"./images/logo-image.svg\",\n\t\"./logo.png\": \"./images/logo.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
+eval("var map = {\n\t\"./admin-img.svg\": \"./images/admin-img.svg\",\n\t\"./btn-next.svg\": \"./images/btn-next.svg\",\n\t\"./btn-prev.svg\": \"./images/btn-prev.svg\",\n\t\"./card-image.png\": \"./images/card-image.png\",\n\t\"./cloud.svg\": \"./images/cloud.svg\",\n\t\"./logo-image.svg\": \"./images/logo-image.svg\",\n\t\"./logo.png\": \"./images/logo.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
 
 /***/ })
 

@@ -1,0 +1,16 @@
+@import './styles.scss';
+
+.main-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__left-bar {
+    width: 53%;
+  }
+
+  &__right-bar {
+    width: 47%;
+  }
+}

@@ -4,13 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 
   &__left-bar {
     width: 60%;
   }
 
   &__title {
-    font-family: suprema;
     font-size: 43.37px;
     color: $blackTextColor;
     line-height: 53px;
@@ -78,7 +78,6 @@
 
   &__admin-name,
   &__admin-account {
-    font-family: suprema;
     font-size: 14px;
     color: $blackTextColor;
   }
