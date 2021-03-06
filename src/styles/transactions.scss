@@ -1,0 +1,98 @@
+@import './styles.scss';
+
+.transaction {
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 19.0044px;
+  padding: 18.49px 28.28px 27.1px 24.64px;
+
+  &__title {
+    font-size: 20.11px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 18.4px;
+  }
+
+  &__table-title,
+  &__table-row {
+    display: flex;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: center;
+  }
+
+  &__table-title,
+  &__table-row {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.24px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
+
+  &__table-row {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+  }
+
+  &__reciever-title,
+  &__type-title,
+  &__date-title,
+  &__amount-title {
+    color: $greyTextColor;
+  }
+
+  &__reciever-title,
+  &__reciever {
+    width: 40%;
+  }
+
+  &__type-title,
+  &__date-title,
+  &__type,
+  &__date {
+    width: 25%;
+  }
+
+  &__amount-title,
+  &__amount {
+    text-align: right;
+    width: 10%;
+  }
+
+  &__type,
+  &__date {
+    color: $greyTableTextColor;
+  }
+
+  &__amount {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+  }
+
+  &__reciever-img {
+    width: 9%;
+    height: 20.4px;
+    border-radius: 6px;
+    background-color: rgba(239, 239, 239, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5.4px;
+
+    & > img {
+      width: 70%;
+      display: block;
+    }
+  }
+
+  &__reciever {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__reciever-text {
+    width: 90%;
+  }
+}

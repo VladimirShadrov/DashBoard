@@ -4,6 +4,7 @@ import '../styles/right-bar.scss';
 import '../styles/header.scss';
 import '../styles/main-page.scss';
 import '../styles/cards.scss';
+import '../styles/transactions.scss';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
