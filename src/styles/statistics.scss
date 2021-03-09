@@ -2,7 +2,7 @@
 
 .statistics {
   padding-left: 32.2px;
-  margin-bottom: 42.7px;
+  margin-bottom: 58.7px;
 
   &__title {
     font-size: 20.11px;
@@ -61,6 +61,12 @@
     left: 0;
     bottom: 0;
     border-radius: 10.76px;
+  }
+
+  &__shopping-progress-bar,
+  &__electronics-progress-bar,
+  &__travels-progress-bar {
+    transition: 0.3s;
   }
 
   &__shopping-progress-bar {
