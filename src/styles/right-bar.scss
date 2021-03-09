@@ -4,6 +4,8 @@
   width: 83%;
   padding: 34px 47.44px 32.1px 45px;
   align-self: stretch;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 950px) {

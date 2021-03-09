@@ -12,6 +12,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap);
 @font-face {
   font-family: suprema;
   src: url("../fonts/suprema.woff") format("woff"), url("../fonts/suprema.woff2") format("woff2"); }
@@ -304,7 +306,14 @@ body {
   width: 83%;
   padding: 34px 47.44px 32.1px 45px;
   -ms-flex-item-align: stretch;
-      align-self: stretch; }
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 @media (max-width: 950px) {
   .dashboard__right-bar {
@@ -516,7 +525,8 @@ body {
   .main-page__left-bar {
     width: 53%; }
   .main-page__right-bar {
-    width: 47%; }
+    width: 47%;
+    height: 100%; }
 
 @font-face {
   font-family: suprema;
@@ -915,6 +925,113 @@ body {
             align-items: center; }
   .transaction__reciever-text {
     width: 90%; }
+
+@font-face {
+  font-family: suprema;
+  src: url("../fonts/suprema.woff") format("woff"), url("../fonts/suprema.woff2") format("woff2"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background-color: #e5e5e5;
+  font-family: suprema;
+  padding: 15px; }
+
+.dashboard {
+  max-width: 1476.59px;
+  min-height: 904px;
+  background-color: white;
+  border-radius: 59px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden; }
+
+.hide {
+  display: none; }
+
+.goals {
+  padding-left: 32.26px;
+  padding-top: 14px;
+  margin-bottom: 47px;
+  position: relative; }
+  .goals__title-container {
+    padding-left: 0.8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 13.5px; }
+  .goals__title {
+    font-size: 20.11px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-right: 7.5px; }
+  .goals__button {
+    display: block;
+    width: 20px;
+    height: 20px; }
+    .goals__button > img {
+      width: 100%; }
+  .goals__wrapper {
+    width: 100%; }
+  .goals__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .goals__item {
+    padding: 13px 24px;
+    -webkit-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 28px;
+    margin-right: 14.5px;
+    width: calc(33.33% - 7.5px); }
+    .goals__item:last-child {
+      margin-right: 0; }
+  .goals__item-expense {
+    font-family: 'Lato', sans-serif;
+    font-size: 23.98px;
+    font-weight: 600;
+    line-height: 25px;
+    color: dimgray; }
+  .goals__date {
+    font-size: 14px;
+    color: #aeaeae;
+    display: block;
+    margin-bottom: 40.5px; }
+  .goals__item-image {
+    margin-bottom: 6px; }
+  .goals__item-goal {
+    font-weight: 400;
+    font-size: 20.11px;
+    line-height: 25px;
+    color: #404040; }
+  .goals__arrow {
+    width: 9.63px;
+    height: 19.27px;
+    position: absolute;
+    right: -18px;
+    top: calc(50% + 9.63px); }
 
 
 /*# sourceMappingURL=styles.css.map*/
