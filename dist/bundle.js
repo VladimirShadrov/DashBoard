@@ -45,7 +45,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n/* harmony import */ var _styles_right_bar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/right-bar.scss */ \"./styles/right-bar.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_main_page_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main-page.scss */ \"./styles/main-page.scss\");\n/* harmony import */ var _styles_cards_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/cards.scss */ \"./styles/cards.scss\");\n/* harmony import */ var _styles_transactions_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/transactions.scss */ \"./styles/transactions.scss\");\n/* harmony import */ var _styles_goals_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/goals.scss */ \"./styles/goals.scss\");\n\n\n\n\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n/* harmony import */ var _styles_right_bar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/right-bar.scss */ \"./styles/right-bar.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_main_page_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main-page.scss */ \"./styles/main-page.scss\");\n/* harmony import */ var _styles_cards_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/cards.scss */ \"./styles/cards.scss\");\n/* harmony import */ var _styles_transactions_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/transactions.scss */ \"./styles/transactions.scss\");\n/* harmony import */ var _styles_goals_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/goals.scss */ \"./styles/goals.scss\");\n/* harmony import */ var _styles_statistics_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/statistics.scss */ \"./styles/statistics.scss\");\n\n\n\n\n\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -3967,6 +3967,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./images/blue-plane.png":
+/*!*******************************!*\
+  !*** ./images/blue-plane.png ***!
+  \*******************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/blue-plane.png\");\n\n//# sourceURL=webpack:///./images/blue-plane.png?");
+
+/***/ }),
+
 /***/ "./images/btn-next.svg":
 /*!*****************************!*\
   !*** ./images/btn-next.svg ***!
@@ -4042,6 +4057,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./images/green-truck.png":
+/*!********************************!*\
+  !*** ./images/green-truck.png ***!
+  \********************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/green-truck.png\");\n\n//# sourceURL=webpack:///./images/green-truck.png?");
+
+/***/ }),
+
 /***/ "./images/holidays.svg":
 /*!*****************************!*\
   !*** ./images/holidays.svg ***!
@@ -4099,6 +4129,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/man.svg\");\n\n//# sourceURL=webpack:///./images/man.svg?");
+
+/***/ }),
+
+/***/ "./images/pink-cart.png":
+/*!******************************!*\
+  !*** ./images/pink-cart.png ***!
+  \******************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/pink-cart.png\");\n\n//# sourceURL=webpack:///./images/pink-cart.png?");
 
 /***/ }),
 
@@ -4291,6 +4336,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./styles/statistics.scss":
+/*!********************************!*\
+  !*** ./styles/statistics.scss ***!
+  \********************************/
+/*! namespace exports */
+/*! exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/statistics.scss?");
+
+/***/ }),
+
 /***/ "./styles/styles.scss":
 /*!****************************!*\
   !*** ./styles/styles.scss ***!
@@ -4354,7 +4413,7 @@ eval("var map = {\n\t\"./suprema.woff\": \"./fonts/suprema.woff\",\n\t\"./suprem
 /*! runtime requirements: module, __webpack_require__.o, __webpack_require__ */
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./admin-img.svg\": \"./images/admin-img.svg\",\n\t\"./btn-next.svg\": \"./images/btn-next.svg\",\n\t\"./btn-prev.svg\": \"./images/btn-prev.svg\",\n\t\"./card-image.png\": \"./images/card-image.png\",\n\t\"./cloud.svg\": \"./images/cloud.svg\",\n\t\"./fiorgio.svg\": \"./images/fiorgio.svg\",\n\t\"./holidays.svg\": \"./images/holidays.svg\",\n\t\"./logo-image.svg\": \"./images/logo-image.svg\",\n\t\"./logo.png\": \"./images/logo.png\",\n\t\"./man.svg\": \"./images/man.svg\",\n\t\"./plus.svg\": \"./images/plus.svg\",\n\t\"./renovation.svg\": \"./images/renovation.svg\",\n\t\"./tesco.svg\": \"./images/tesco.svg\",\n\t\"./truck.svg\": \"./images/truck.svg\",\n\t\"./xbox.svg\": \"./images/xbox.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
+eval("var map = {\n\t\"./admin-img.svg\": \"./images/admin-img.svg\",\n\t\"./blue-plane.png\": \"./images/blue-plane.png\",\n\t\"./btn-next.svg\": \"./images/btn-next.svg\",\n\t\"./btn-prev.svg\": \"./images/btn-prev.svg\",\n\t\"./card-image.png\": \"./images/card-image.png\",\n\t\"./cloud.svg\": \"./images/cloud.svg\",\n\t\"./fiorgio.svg\": \"./images/fiorgio.svg\",\n\t\"./green-truck.png\": \"./images/green-truck.png\",\n\t\"./holidays.svg\": \"./images/holidays.svg\",\n\t\"./logo-image.svg\": \"./images/logo-image.svg\",\n\t\"./logo.png\": \"./images/logo.png\",\n\t\"./man.svg\": \"./images/man.svg\",\n\t\"./pink-cart.png\": \"./images/pink-cart.png\",\n\t\"./plus.svg\": \"./images/plus.svg\",\n\t\"./renovation.svg\": \"./images/renovation.svg\",\n\t\"./tesco.svg\": \"./images/tesco.svg\",\n\t\"./truck.svg\": \"./images/truck.svg\",\n\t\"./xbox.svg\": \"./images/xbox.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./images sync recursive \\\\.(png|jpg|svg|gif)$\";\n\n//# sourceURL=webpack:///./images/_sync_\\.(png%7Cjpg%7Csvg%7Cgif)$?");
 
 /***/ })
 

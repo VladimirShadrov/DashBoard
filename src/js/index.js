@@ -6,6 +6,7 @@ import '../styles/main-page.scss';
 import '../styles/cards.scss';
 import '../styles/transactions.scss';
 import '../styles/goals.scss';
+import '../styles/statistics.scss';
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);
