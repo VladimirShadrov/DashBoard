@@ -3,15 +3,52 @@
 .main-page {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 
   &__left-bar {
     width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   &__right-bar {
     width: 47%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 870px) {
+  .main-page__left-bar {
+    width: 100%;
+  }
+
+  .main-page__right-bar {
+    width: 100%;
+  }
+
+  .main-page {
+    padding: 0 140px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-page {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-page {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-page {
+    padding: 0 5px;
   }
 }

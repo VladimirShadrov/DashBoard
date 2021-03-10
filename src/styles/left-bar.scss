@@ -201,7 +201,7 @@
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 980px) {
   .left-bar {
     transform: translateX(-100%);
     width: 251px;
@@ -211,17 +211,4 @@
   .left-bar__close {
     display: block;
   }
-}
-
-@media (max-width: 870px) {
-  // .logo,
-  // .menu,
-  // .left-bar__cloud,
-  // .left-bar__btn {
-  //   opacity: 0;
-  // }
-
-  // .left-bar {
-  //   width: 0;
-  // }
 }

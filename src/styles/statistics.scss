@@ -2,7 +2,7 @@
 
 .statistics {
   padding-left: 32.2px;
-  margin-bottom: 58.7px;
+  margin-bottom: 20px;
 
   &__title {
     font-size: 20.11px;
@@ -95,8 +95,31 @@
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 25px;
     color: $goalsPriceColor;
     align-self: stretch;
+  }
+}
+
+@media (max-width: 1150px) {
+  .statistics {
+    padding-left: 15px;
+  }
+
+  .statistics__item-img-container {
+    width: 32px;
+    height: 32px;
+  }
+
+  .statistics__value {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 870px) {
+  .statistics {
+    padding-left: 0;
+    margin-bottom: 25px;
   }
 }

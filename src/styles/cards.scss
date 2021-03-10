@@ -18,6 +18,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   &__left-bar {
@@ -299,5 +300,123 @@
     right: 0;
     bottom: 0;
     left: calc(100% - 23.45px);
+  }
+}
+
+@media (max-width: 1290px) {
+  .cards__left-bar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cards__right-bar {
+    padding-right: 10px;
+  }
+
+  .cards__btn-prev {
+    left: 7px;
+  }
+
+  .cards__btn-next {
+    right: 7px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .cards__limit-text,
+  .cards__balance-item,
+  .cards__balance-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .cards__current-balance-value {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .cards__imcome-value,
+  .cards__income-currency,
+  .cards__outcome-currency,
+  .cards__outcome-value {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .cards__left-bar {
+    width: 73%;
+  }
+
+  .cards__right-bar {
+    width: 27%;
+  }
+
+  .cards {
+    padding-bottom: 12px;
+  }
+
+  .cards__card {
+    padding: 15px 30px 15px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards__current-balance-value,
+  .cards__income-currency,
+  .cards__current-balance-currency,
+  .cards__imcome-value,
+  .cards__outcome-currency,
+  .cards__outcome-value {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cards__balance-title,
+  .cards__limit-text,
+  .cards__balance {
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  .cards__card-number > span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .cards__premium-account {
+    margin-bottom: 20px;
+  }
+
+  .cards__card-number {
+    margin-bottom: 16px;
+  }
+
+  .cards__card-holder-value,
+  .cards__card-holder-value,
+  .cards__balance-item {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .cards__card-holder-item {
+    margin-right: 30px;
+    width: 43%;
+  }
+
+  .cards__card-holder-title {
+    margin-bottom: 3px;
+  }
+
+  .cards__current-balance-item {
+    margin-bottom: 15px;
+  }
+
+  .cards__card-wrapper {
+    min-height: 145px;
+  }
+
+  .cards__btn-prev,
+  .cards__btn-next {
+    top: 65px;
   }
 }

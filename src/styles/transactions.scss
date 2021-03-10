@@ -64,6 +64,14 @@
     color: $greyTableTextColor;
   }
 
+  .transaction__reciever-text,
+  .transaction__type-title,
+  .transaction__date-title,
+  .transaction__type,
+  .transaction__date {
+    padding: 0 3px;
+  }
+
   &__amount {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -71,7 +79,7 @@
   }
 
   &__reciever-img {
-    width: 9%;
+    width: 20px;
     height: 20.4px;
     border-radius: 6px;
     background-color: rgba(239, 239, 239, 1);
@@ -94,5 +102,21 @@
 
   &__reciever-text {
     width: 90%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .transaction__reciever-text,
+  .transaction__type-title,
+  .transaction__date-title,
+  .transaction__type,
+  .transaction__date,
+  .transaction__amount-title,
+  .transaction__amount {
+    font-size: 12px;
+  }
+
+  .transaction {
+    padding: 12px 26px 12px 12px;
   }
 }

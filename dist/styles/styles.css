@@ -260,7 +260,7 @@ body {
   .left-bar {
     padding-left: 10px; } }
 
-@media (max-width: 970px) {
+@media (max-width: 980px) {
   .left-bar {
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
@@ -319,13 +319,17 @@ body {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-@media (max-width: 950px) {
+@media (max-width: 1350px) {
+  .dashboard__right-bar {
+    padding: 20px; } }
+
+@media (max-width: 980px) {
   .dashboard__right-bar {
     width: 100%; } }
 
-@media (max-width: 620px) {
+@media (max-width: 550px) {
   .dashboard__right-bar {
-    padding: 20px; } }
+    padding: 10px; } }
 
 @font-face {
   font-family: suprema;
@@ -441,6 +445,10 @@ body {
   .header__admin-account {
     color: #aeaeae; }
 
+@media (max-width: 980px) {
+  .header {
+    padding-left: 25px; } }
+
 @media (max-width: 690px) {
   .header__right-bar {
     -ms-flex-wrap: wrap;
@@ -521,16 +529,55 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .main-page__left-bar {
-    width: 53%; }
+    width: 53%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .main-page__right-bar {
     width: 47%;
-    height: 100%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+@media (max-width: 870px) {
+  .main-page__left-bar {
+    width: 100%; }
+  .main-page__right-bar {
+    width: 100%; }
+  .main-page {
+    padding: 0 140px; } }
+
+@media (max-width: 750px) {
+  .main-page {
+    padding: 0 80px; } }
+
+@media (max-width: 650px) {
+  .main-page {
+    padding: 0 50px; } }
+
+@media (max-width: 550px) {
+  .main-page {
+    padding: 0 5px; } }
 
 @font-face {
   font-family: suprema;
@@ -588,7 +635,9 @@ body {
             justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .cards__left-bar {
     width: 67%;
     padding-left: 36px;
@@ -818,6 +867,80 @@ body {
     bottom: 0;
     left: calc(100% - 23.45px); }
 
+@media (max-width: 1290px) {
+  .cards__left-bar {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .cards__right-bar {
+    padding-right: 10px; }
+  .cards__btn-prev {
+    left: 7px; }
+  .cards__btn-next {
+    right: 7px; } }
+
+@media (max-width: 1170px) {
+  .cards__limit-text,
+  .cards__balance-item,
+  .cards__balance-title {
+    font-size: 12px;
+    line-height: 15px; }
+  .cards__current-balance-value {
+    font-size: 20px;
+    line-height: 23px; }
+  .cards__imcome-value,
+  .cards__income-currency,
+  .cards__outcome-currency,
+  .cards__outcome-value {
+    font-size: 16px;
+    line-height: 19px; }
+  .cards__left-bar {
+    width: 73%; }
+  .cards__right-bar {
+    width: 27%; }
+  .cards {
+    padding-bottom: 12px; }
+  .cards__card {
+    padding: 15px 30px 15px 15px; } }
+
+@media (max-width: 480px) {
+  .cards__current-balance-value,
+  .cards__income-currency,
+  .cards__current-balance-currency,
+  .cards__imcome-value,
+  .cards__outcome-currency,
+  .cards__outcome-value {
+    font-size: 14px;
+    line-height: 17px; }
+  .cards__balance-title,
+  .cards__limit-text,
+  .cards__balance {
+    font-size: 8px;
+    line-height: 11px; }
+  .cards__card-number > span {
+    font-size: 15px;
+    line-height: 18px; }
+  .cards__premium-account {
+    margin-bottom: 20px; }
+  .cards__card-number {
+    margin-bottom: 16px; }
+  .cards__card-holder-value,
+  .cards__card-holder-value,
+  .cards__balance-item {
+    font-size: 10px;
+    line-height: 12px; }
+  .cards__card-holder-item {
+    margin-right: 30px;
+    width: 43%; }
+  .cards__card-holder-title {
+    margin-bottom: 3px; }
+  .cards__current-balance-item {
+    margin-bottom: 15px; }
+  .cards__card-wrapper {
+    min-height: 145px; }
+  .cards__btn-prev,
+  .cards__btn-next {
+    top: 65px; } }
+
 @font-face {
   font-family: suprema;
   src: url("../fonts/suprema.woff") format("woff"), url("../fonts/suprema.woff2") format("woff2"); }
@@ -895,12 +1018,18 @@ body {
     width: 10%; }
   .transaction__type, .transaction__date {
     color: #c7c7c7; }
+  .transaction .transaction__reciever-text,
+  .transaction .transaction__type-title,
+  .transaction .transaction__date-title,
+  .transaction .transaction__type,
+  .transaction .transaction__date {
+    padding: 0 3px; }
   .transaction__amount {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     line-height: 17px; }
   .transaction__reciever-img {
-    width: 9%;
+    width: 20px;
     height: 20.4px;
     border-radius: 6px;
     background-color: #efefef;
@@ -929,6 +1058,18 @@ body {
             align-items: center; }
   .transaction__reciever-text {
     width: 90%; }
+
+@media (max-width: 1050px) {
+  .transaction__reciever-text,
+  .transaction__type-title,
+  .transaction__date-title,
+  .transaction__type,
+  .transaction__date,
+  .transaction__amount-title,
+  .transaction__amount {
+    font-size: 12px; }
+  .transaction {
+    padding: 12px 26px 12px 12px; } }
 
 @font-face {
   font-family: suprema;
@@ -1037,6 +1178,29 @@ body {
     right: -18px;
     top: calc(50% + 9.63px); }
 
+@media (max-width: 1300px) {
+  .goals__item {
+    padding: 12px; } }
+
+@media (max-width: 1150px) {
+  .goals__item-goal {
+    font-size: 14px;
+    line-height: 17px; }
+  .goals {
+    padding-left: 15px; }
+  .goals__item-expense {
+    font-size: 18px;
+    line-height: 21px; }
+  .goals__date {
+    font-size: 12px;
+    margin-bottom: 15px; } }
+
+@media (max-width: 870px) {
+  .goals {
+    padding-left: 0;
+    padding-top: 20px;
+    margin-bottom: 25px; } }
+
 @font-face {
   font-family: suprema;
   src: url("../fonts/suprema.woff") format("woff"), url("../fonts/suprema.woff2") format("woff2"); }
@@ -1075,7 +1239,7 @@ body {
 
 .statistics {
   padding-left: 32.2px;
-  margin-bottom: 58.7px; }
+  margin-bottom: 20px; }
   .statistics__title {
     font-size: 20.11px;
     font-weight: 600;
@@ -1149,10 +1313,25 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 25px;
     color: dimgray;
     -ms-flex-item-align: stretch;
         align-self: stretch; }
+
+@media (max-width: 1150px) {
+  .statistics {
+    padding-left: 15px; }
+  .statistics__item-img-container {
+    width: 32px;
+    height: 32px; }
+  .statistics__value {
+    font-size: 20px;
+    line-height: 21px; } }
+
+@media (max-width: 870px) {
+  .statistics {
+    padding-left: 0;
+    margin-bottom: 25px; } }
 
 @font-face {
   font-family: suprema;
@@ -1200,7 +1379,10 @@ body {
           align-items: stretch;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: auto; }
   .transfer__container {
     padding: 18px 11px 13px 11px;
     -webkit-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
@@ -1254,7 +1436,8 @@ body {
     font-weight: 400;
     line-height: 15px;
     color: #404040;
-    margin-top: auto; }
+    margin-top: auto;
+    text-align: center; }
   .transfer__transfer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1353,6 +1536,19 @@ body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
+
+@media (max-width: 1220px) {
+  .transfer__container {
+    width: 100%;
+    margin-bottom: 15px; }
+  .transfer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
+
+@media (max-width: 870px) {
+  .transfer {
+    padding-left: 0; } }
 
 
 /*# sourceMappingURL=styles.css.map*/

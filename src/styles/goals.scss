@@ -87,3 +87,38 @@
     top: calc(50% + 9.63px);
   }
 }
+
+@media (max-width: 1300px) {
+  .goals__item {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .goals__item-goal {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .goals {
+    padding-left: 15px;
+  }
+
+  .goals__item-expense {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .goals__date {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 870px) {
+  .goals {
+    padding-left: 0;
+    padding-top: 20px;
+    margin-bottom: 25px;
+  }
+}

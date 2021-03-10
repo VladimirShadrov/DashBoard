@@ -8,14 +8,20 @@
   flex-direction: column;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1350px) {
+  .dashboard__right-bar {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 980px) {
   .dashboard__right-bar {
     width: 100%;
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 550px) {
   .dashboard__right-bar {
-    padding: 20px;
+    padding: 10px;
   }
 }

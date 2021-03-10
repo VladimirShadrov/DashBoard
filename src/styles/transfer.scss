@@ -5,6 +5,8 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: auto;
 
   &__container {
     padding: 18px 11px 13px 11px;
@@ -59,6 +61,7 @@
     line-height: 15px;
     color: $blackTextColor;
     margin-top: auto;
+    text-align: center;
   }
 
   &__transfer-wrapper {
@@ -164,5 +167,22 @@
     border-top: 2px solid $whiteColor;
     border-right: 2px solid $whiteColor;
     transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 1220px) {
+  .transfer__container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .transfer {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 870px) {
+  .transfer {
+    padding-left: 0;
   }
 }
