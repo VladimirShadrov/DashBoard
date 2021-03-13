@@ -8,6 +8,11 @@ import '../styles/transactions.scss';
 import '../styles/goals.scss';
 import '../styles/statistics.scss';
 import '../styles/transfer.scss';
+import { LeftBar } from './components/leftBar';
+
+const leftBar = document.querySelector('.left-bar');
+
+new LeftBar(leftBar);
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);

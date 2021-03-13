@@ -35,6 +35,21 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 
 /***/ }),
 
+/***/ "./js/components/leftBar.js":
+/*!**********************************!*\
+  !*** ./js/components/leftBar.js ***!
+  \**********************************/
+/*! namespace exports */
+/*! export LeftBar [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"LeftBar\": function() { return /* binding */ LeftBar; }\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar LeftBar = /*#__PURE__*/function () {\n  function LeftBar(el) {\n    _classCallCheck(this, LeftBar);\n\n    this.el = el;\n    this.burgerButton = this.el.querySelector('.left-bar__open');\n    this.overlay = this.el.previousElementSibling;\n    this.init();\n  }\n\n  _createClass(LeftBar, [{\n    key: \"openMenu\",\n    value: function openMenu() {\n      var _this = this;\n\n      this.burgerButton.classList.add('left-bar__close');\n      setTimeout(function () {\n        _this.el.classList.add('left-bar__open-menu');\n\n        _this.el.classList.remove('left-bar');\n\n        _this.burgerButton.style.right = '5px';\n        _this.burgerButton.style.top = '55px';\n\n        _this.burgerButton.removeAttribute('data-name');\n\n        _this.burgerButton.setAttribute('data-name', 'close');\n\n        _this.overlay.style.opacity = '1';\n        _this.overlay.style.zIndex = '1';\n      }, 300);\n    }\n  }, {\n    key: \"closeMenu\",\n    value: function closeMenu() {\n      var _this2 = this;\n\n      this.burgerButton.classList.remove('left-bar__close');\n      setTimeout(function () {\n        _this2.el.classList.remove('left-bar__open-menu');\n\n        _this2.el.classList.add('left-bar');\n\n        _this2.burgerButton.style.right = '-50px';\n        _this2.burgerButton.style.top = '42px';\n\n        _this2.burgerButton.removeAttribute('data-name');\n\n        _this2.burgerButton.setAttribute('data-name', 'open');\n\n        _this2.overlay.style.opacity = '0';\n        _this2.overlay.style.zIndex = '-1';\n      }, 300);\n    }\n  }, {\n    key: \"init\",\n    value: function init() {\n      this.el.addEventListener('click', manageLeftBar.bind(this));\n    }\n  }]);\n\n  return LeftBar;\n}();\n\nfunction manageLeftBar(event) {\n  if (event.target.dataset.name === 'open') {\n    this.openMenu();\n  }\n\n  if (event.target.dataset.name === 'close') {\n    this.closeMenu();\n  }\n}\n\n//# sourceURL=webpack:///./js/components/leftBar.js?");
+
+/***/ }),
+
 /***/ "./js/index.js":
 /*!*********************!*\
   !*** ./js/index.js ***!
@@ -45,7 +60,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n/* harmony import */ var _styles_right_bar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/right-bar.scss */ \"./styles/right-bar.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_main_page_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main-page.scss */ \"./styles/main-page.scss\");\n/* harmony import */ var _styles_cards_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/cards.scss */ \"./styles/cards.scss\");\n/* harmony import */ var _styles_transactions_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/transactions.scss */ \"./styles/transactions.scss\");\n/* harmony import */ var _styles_goals_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/goals.scss */ \"./styles/goals.scss\");\n/* harmony import */ var _styles_statistics_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/statistics.scss */ \"./styles/statistics.scss\");\n/* harmony import */ var _styles_transfer_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/transfer.scss */ \"./styles/transfer.scss\");\n\n\n\n\n\n\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_left_bar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/left-bar.scss */ \"./styles/left-bar.scss\");\n/* harmony import */ var _styles_right_bar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/right-bar.scss */ \"./styles/right-bar.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_main_page_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/main-page.scss */ \"./styles/main-page.scss\");\n/* harmony import */ var _styles_cards_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/cards.scss */ \"./styles/cards.scss\");\n/* harmony import */ var _styles_transactions_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/transactions.scss */ \"./styles/transactions.scss\");\n/* harmony import */ var _styles_goals_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/goals.scss */ \"./styles/goals.scss\");\n/* harmony import */ var _styles_statistics_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/statistics.scss */ \"./styles/statistics.scss\");\n/* harmony import */ var _styles_transfer_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/transfer.scss */ \"./styles/transfer.scss\");\n/* harmony import */ var _components_leftBar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/leftBar */ \"./js/components/leftBar.js\");\n\n\n\n\n\n\n\n\n\n\n\nvar leftBar = document.querySelector('.left-bar');\nnew _components_leftBar__WEBPACK_IMPORTED_MODULE_10__.LeftBar(leftBar); // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -4547,6 +4562,18 @@ eval("var map = {\n\t\"./admin-img.svg\": \"./images/admin-img.svg\",\n\t\"./ann
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {

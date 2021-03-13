@@ -1,9 +1,10 @@
 @import './styles.scss';
 
+.left-bar__open-menu,
 .left-bar {
   padding: 60.4px 10px 32.97px 40.54px;
   border-right: 1px solid $borderLeftBarColor;
-  width: 17%;
+  background-color: $whiteColor;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,6 +12,24 @@
   display: flex;
   flex-direction: column;
   transition: 0.3s;
+  z-index: 1;
+}
+
+.left-bar__open-menu {
+  transform: translateX(0);
+  width: 251px;
+  border-radius: 0;
+  padding-left: 10px;
+}
+
+.left-bar {
+  border-radius: 59px 0 0 59px;
+  width: 17%;
+
+  &__active {
+    transform: translateX(0);
+    z-index: 1;
+  }
 
   &__cloud {
     width: 100%;
@@ -65,11 +84,19 @@
     padding: 19px 10px;
     cursor: pointer;
 
+    &:hover > span,
+    &:hover::before,
+    &:hover::after {
+      background-color: $menuItemsActiveColor;
+    }
+
     & > span {
       display: block;
       width: 100%;
       height: 2px;
       position: relative;
+      pointer-events: none;
+      transition: 0.3s;
     }
 
     &::before {
@@ -205,6 +232,7 @@
   .left-bar {
     transform: translateX(-100%);
     width: 251px;
+    border-radius: 0;
   }
 
   .left-bar__open,
