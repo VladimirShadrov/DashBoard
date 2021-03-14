@@ -81,6 +81,7 @@
     top: 0;
     left: 0;
     bottom: 0;
+    transition: 0.3s;
   }
 
   &__card {
@@ -180,6 +181,7 @@
     border-radius: 13.62px;
     width: 23.3%;
     background-color: rgba(25, 123, 189, 1);
+    transition: 0.3s;
   }
 
   &__limit-wrapper {
@@ -196,7 +198,9 @@
     color: $greyTextColor;
   }
 
-  &__balance-item {
+  &__balance-item,
+  &__balance-item-outcome,
+  &__balance-item-total {
     font-size: 14px;
     font-weight: 600;
     line-height: 16.8px;
@@ -393,7 +397,9 @@
 
   .cards__card-holder-value,
   .cards__card-holder-value,
-  .cards__balance-item {
+  .cards__balance-item,
+  .cards__balance-item-outcome,
+  .cards__balance-item-total {
     font-size: 10px;
     line-height: 12px;
   }

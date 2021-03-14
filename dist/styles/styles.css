@@ -795,7 +795,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0; }
+    bottom: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .cards__card {
     width: calc(100% / 3);
     padding: 20.38px 49.5px 21px 20.89px;
@@ -879,7 +882,10 @@ body {
     display: block;
     border-radius: 13.62px;
     width: 23.3%;
-    background-color: #197bbd; }
+    background-color: #197bbd;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .cards__limit-wrapper {
     width: 100%;
     display: -webkit-box;
@@ -896,7 +902,7 @@ body {
     font-weight: 400;
     line-height: 17.24px;
     color: #aeaeae; }
-  .cards__balance-item {
+  .cards__balance-item, .cards__balance-item-outcome, .cards__balance-item-total {
     font-size: 14px;
     font-weight: 600;
     line-height: 16.8px;
@@ -1035,7 +1041,9 @@ body {
     margin-bottom: 16px; }
   .cards__card-holder-value,
   .cards__card-holder-value,
-  .cards__balance-item {
+  .cards__balance-item,
+  .cards__balance-item-outcome,
+  .cards__balance-item-total {
     font-size: 10px;
     line-height: 12px; }
   .cards__card-holder-item {
