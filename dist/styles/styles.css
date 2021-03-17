@@ -1595,14 +1595,32 @@ body {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 2px; }
+            align-items: center; }
     .transfer__user:last-child {
       margin-right: 0;
       padding-top: 10px; }
+  .transfer__user-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2px; }
   .transfer__user-image {
     max-width: 42px;
-    max-height: 42px; }
+    max-height: 42px;
+    margin: 0 auto; }
     .transfer__user-image > img {
       width: 100%; }
   .transfer__user-name {
@@ -1612,6 +1630,10 @@ body {
     color: #404040;
     margin-top: auto;
     text-align: center; }
+  .transfer__user-image, .transfer__image, .transfer__user-name {
+    pointer-events: none; }
+    .transfer__user-image:last-child, .transfer__image:last-child, .transfer__user-name:last-child {
+      pointer-events: visible; }
   .transfer__transfer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1710,6 +1732,109 @@ body {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
+  .transfer__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .transfer__modal-transfer, .transfer__modal-success {
+    min-width: 300px;
+    min-height: 320px;
+    padding: 30px 10px 10px;
+    background-color: white;
+    border: 5px solid #197bbd;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .transfer__dropdown-container {
+    position: relative;
+    width: 250px;
+    height: 35px;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    padding: 7px 10px;
+    cursor: pointer; }
+  .transfer__arrow-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    padding: 12px 0;
+    pointer-events: none; }
+  .transfer__arrow-icon {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    pointer-events: none; }
+  .transfer__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #404040;
+    border-radius: 5px; }
+  .transfer__dropdown-item {
+    list-style: none;
+    padding: 7px 10px;
+    border-bottom: 1px solid #aeaeae;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .transfer__dropdown-item:last-child {
+      border-bottom: none; }
+    .transfer__dropdown-item:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+  .transfer__send-transfer {
+    text-decoration: none;
+    background-color: #ffc145;
+    color: #404040;
+    font-weight: 700;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 7px;
+    text-align: center; }
 
 @media (max-width: 1220px) {
   .transfer__container {

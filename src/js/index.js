@@ -11,13 +11,16 @@ import '../styles/transfer.scss';
 import { LeftBar } from './components/leftBar';
 import { SaveCardsDataToStorage } from './data/data';
 import { Cards } from './components/cards';
+import { OutcomeStatistics } from './components/outcomeStatistics';
 
 const leftBar = document.querySelector('.left-bar');
 const cards = document.querySelector('.cards');
+const statistics = document.querySelector('.statistics');
 
 new LeftBar(leftBar);
 new SaveCardsDataToStorage();
-new Cards(cards);
+new Cards(cards, statistics);
+new OutcomeStatistics(statistics);
 
 // Перенос изображений
 require.context('../images', true, /\.(png|jpg|svg|gif)$/);

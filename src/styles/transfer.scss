@@ -38,7 +38,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2px;
 
     &:last-child {
       margin-right: 0;
@@ -46,9 +45,21 @@
     }
   }
 
+  &__user-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+  }
+
   &__user-image {
     max-width: 42px;
     max-height: 42px;
+    margin: 0 auto;
 
     & > img {
       width: 100%;
@@ -62,6 +73,16 @@
     color: $blackTextColor;
     margin-top: auto;
     text-align: center;
+  }
+
+  &__user-image,
+  &__image,
+  &__user-name {
+    pointer-events: none;
+
+    &:last-child {
+      pointer-events: visible;
+    }
   }
 
   &__transfer-wrapper {
@@ -167,6 +188,105 @@
     border-top: 2px solid $whiteColor;
     border-right: 2px solid $whiteColor;
     transform: rotate(45deg);
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s;
+  }
+
+  &__modal-transfer,
+  &__modal-success {
+    min-width: 300px;
+    min-height: 320px;
+    padding: 30px 10px 10px;
+    background-color: $whiteColor;
+    border: 5px solid $cardProgressBarColor;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+  }
+
+  &__dropdown-container {
+    position: relative;
+    width: 250px;
+    height: 35px;
+    border: 1px solid $blackTextColor;
+    border-radius: 5px;
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+
+  &__arrow-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    padding: 12px 0;
+    pointer-events: none;
+  }
+
+  &__arrow-icon {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+    pointer-events: none;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid $blackTextColor;
+    border-radius: 5px;
+  }
+
+  &__dropdown-item {
+    list-style: none;
+    padding: 7px 10px;
+    border-bottom: 1px solid $greyTextColor;
+    transition: 0.2s;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__send-transfer {
+    text-decoration: none;
+    background-color: rgba(255, 193, 69, 1);
+    color: $blackTextColor;
+    font-weight: 700;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 7px;
+    text-align: center;
   }
 }
 

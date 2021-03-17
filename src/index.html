@@ -355,7 +355,9 @@
                   </div>
                   <div class="statistics__progress-bar-name">Shoppping</div>
                 </div>
-                <div class="statistics__value">52%</div>
+                <div class="statistics__value statistics__shopping-value">
+                  52%
+                </div>
               </div>
               <div class="statistics__item">
                 <div class="statistics__item-img-container">
@@ -373,7 +375,9 @@
                   </div>
                   <div class="statistics__progress-bar-name">Electronics</div>
                 </div>
-                <div class="statistics__value">21%</div>
+                <div class="statistics__value statistics__electronics-value">
+                  21%
+                </div>
               </div>
               <div class="statistics__item">
                 <div class="statistics__item-img-container">
@@ -391,7 +395,9 @@
                   </div>
                   <div class="statistics__progress-bar-name">Travels</div>
                 </div>
-                <div class="statistics__value">74%</div>
+                <div class="statistics__value statistics__travels-value">
+                  74%
+                </div>
               </div>
             </div>
             <!--  //Блок Outcome Statistics  -->
@@ -402,54 +408,64 @@
                 <h3 class="transfer__title">New transaction</h3>
                 <div class="transfer__user-wrapper">
                   <div class="transfer__user">
-                    <div class="transfer__user-image">
-                      <img
-                        class="transfer__image"
-                        src="./images/ann.svg"
-                        alt="user-image"
-                      />
-                    </div>
-                    <div class="transfer__user-name">Ann</div>
+                    <a href="#" class="transfer__user-link">
+                      <div class="transfer__user-image">
+                        <img
+                          class="transfer__image"
+                          src="./images/ann.svg"
+                          alt="user-image"
+                        />
+                      </div>
+                      <div class="transfer__user-name">Ann</div>
+                    </a>
                   </div>
                   <div class="transfer__user">
-                    <div class="transfer__user-image">
-                      <img
-                        class="transfer__image"
-                        src="./images/monica.svg"
-                        alt="user-image"
-                      />
-                    </div>
-                    <div class="transfer__user-name">Monica</div>
+                    <a href="#" class="transfer__user-link">
+                      <div class="transfer__user-image">
+                        <img
+                          class="transfer__image"
+                          src="./images/monica.svg"
+                          alt="user-image"
+                        />
+                      </div>
+                      <div class="transfer__user-name">Monica</div>
+                    </a>
                   </div>
                   <div class="transfer__user">
-                    <div class="transfer__user-image">
-                      <img
-                        class="transfer__image"
-                        src="./images/john.svg"
-                        alt="user-image"
-                      />
-                    </div>
-                    <div class="transfer__user-name">John</div>
+                    <a href="#" class="transfer__user-link">
+                      <div class="transfer__user-image">
+                        <img
+                          class="transfer__image"
+                          src="./images/john.svg"
+                          alt="user-image"
+                        />
+                      </div>
+                      <div class="transfer__user-name">John</div>
+                    </a>
                   </div>
                   <div class="transfer__user">
-                    <div class="transfer__user-image">
-                      <img
-                        class="transfer__image"
-                        src="./images/mike.svg"
-                        alt="user-image"
-                      />
-                    </div>
-                    <div class="transfer__user-name">Mike</div>
+                    <a href="#" class="transfer__user-link">
+                      <div class="transfer__user-image">
+                        <img
+                          class="transfer__image"
+                          src="./images/mike.svg"
+                          alt="user-image"
+                        />
+                      </div>
+                      <div class="transfer__user-name">Mike</div>
+                    </a>
                   </div>
                   <div class="transfer__user">
-                    <div class="transfer__user-image">
-                      <img
-                        class="transfer__image"
-                        src="./images/mia.svg"
-                        alt="user-imaage"
-                      />
-                    </div>
-                    <div class="transfer__user-name">Ann</div>
+                    <a href="#" class="transfer__user-link">
+                      <div class="transfer__user-image">
+                        <img
+                          class="transfer__image"
+                          src="./images/mia.svg"
+                          alt="user-imaage"
+                        />
+                      </div>
+                      <div class="transfer__user-name">Mia</div>
+                    </a>
                   </div>
                   <div class="transfer__user">
                     <div class="transfer__user-image">
@@ -489,6 +505,58 @@
                   <span class="transfer__loan-slogan">Get great loan!</span>
                   <span class="transfer__loan-arrow"></span>
                 </a>
+              </div>
+              <div class="transfer__overlay">
+                <div class="transfer__modal-transfer">
+                  <div
+                    class="transfer__dropdown-container"
+                    data-name="container"
+                  >
+                    Select a recipient
+                    <div class="transfer__arrow-container">
+                      <span class="transfer__arrow-icon"></span>
+                    </div>
+                    <ul class="transfer__dropdown">
+                      <li
+                        class="transfer__dropdown-item"
+                        data-name="recipient"
+                        data-id="ann"
+                      >
+                        Ann
+                      </li>
+                      <li
+                        class="transfer__dropdown-item"
+                        data-name="recipient"
+                        data-id="monica"
+                      >
+                        Monica
+                      </li>
+                      <li
+                        class="transfer__dropdown-item"
+                        data-name="recipient"
+                        data-id="john"
+                      >
+                        John
+                      </li>
+                      <li
+                        class="transfer__dropdown-item"
+                        data-name="recipient"
+                        data-id="mike"
+                      >
+                        Mike
+                      </li>
+                      <li
+                        class="transfer__dropdown-item"
+                        data-name="recipient"
+                        data-id="mia"
+                      >
+                        Mia
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="transfer__send-transfer">Transfer</a>
+                </div>
+                <!-- <div class="transfer__modal-success hide"></div> -->
               </div>
             </div>
 

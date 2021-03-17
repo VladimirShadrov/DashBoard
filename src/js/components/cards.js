@@ -1,5 +1,7 @@
+import { OutcomeStatistics } from './outcomeStatistics';
+
 export class Cards {
-  constructor(cards) {
+  constructor(cards, el) {
     this.el = cards;
     this.data = JSON.parse(sessionStorage.getItem('cards'));
     this.sliderContainer = this.el.querySelector('.cards__card-wrapper');
@@ -16,10 +18,10 @@ export class Cards {
     );
     this.cardBalanceTotal = this.el.querySelector('.cards__balance-item-total');
     this.cardProgressBar = this.el.querySelector('.cards__progress-bar');
+    this.outcomeStatistics = new OutcomeStatistics(el);
 
     this.counter = 0;
     this.slideDirection;
-    console.log(this.slideDirection);
 
     this.init();
     this.renderSlider(this.data);
@@ -107,6 +109,7 @@ export class Cards {
       this.updateBalanceInformation(this.data[this.counter]);
       this.btnNext.removeAttribute('disabled');
       this.btnPrev.removeAttribute('disabled');
+      this.outcomeStatistics.cangeProgressBarWidth(this.data[this.counter]);
 
       setTimeout(() => {
         this.slidesBand.style.transition = '0.3s';
