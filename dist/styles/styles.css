@@ -1617,13 +1617,13 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 2px; }
-  .transfer__user-image {
+  .transfer__user-image, .transfer__user-image-add {
     max-width: 42px;
     max-height: 42px;
     margin: 0 auto; }
-    .transfer__user-image > img {
+    .transfer__user-image > img, .transfer__user-image-add > img {
       width: 100%; }
-  .transfer__user-name {
+  .transfer__user-name, .transfer__add-new {
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
@@ -1632,8 +1632,6 @@ body {
     text-align: center; }
   .transfer__user-image, .transfer__image, .transfer__user-name {
     pointer-events: none; }
-    .transfer__user-image:last-child, .transfer__image:last-child, .transfer__user-name:last-child {
-      pointer-events: visible; }
   .transfer__transfer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1685,6 +1683,8 @@ body {
     font-size: 11px;
     font-weight: 700;
     color: #404040; }
+    .transfer__transfer-link > span {
+      pointer-events: none; }
   .transfer__arrow {
     display: block;
     border-top: 2px solid #404040;
@@ -1722,7 +1722,8 @@ body {
     bottom: 10px;
     left: 16px; }
   .transfer__loan-slogan {
-    text-align: left; }
+    text-align: left;
+    pointer-events: none; }
   .transfer__loan-arrow {
     display: inline-block;
     width: 8px;
@@ -1753,11 +1754,21 @@ body {
     padding: 10px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    opacity: 0;
+    z-index: -1; }
+  .transfer__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer; }
   .transfer__modal-transfer, .transfer__modal-success {
+    position: relative;
     min-width: 300px;
-    min-height: 320px;
-    padding: 30px 10px 10px;
+    min-height: 340px;
+    padding: 40px 10px 10px;
     background-color: white;
     border: 5px solid #197bbd;
     border-radius: 25px;
@@ -1777,6 +1788,12 @@ body {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+  .transfer__modal-transfer {
+    -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+            transform: translateY(200%); }
+  .transfer__modal-success {
+    min-height: 100px; }
   .transfer__dropdown-container {
     position: relative;
     width: 250px;
@@ -1785,6 +1802,8 @@ body {
     border-radius: 5px;
     padding: 7px 10px;
     cursor: pointer; }
+  .transfer__dropdown-text {
+    pointer-events: none; }
   .transfer__arrow-container {
     position: absolute;
     top: 0;
@@ -1793,6 +1812,12 @@ body {
     width: 35px;
     height: 35px;
     padding: 12px 0;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
     pointer-events: none; }
   .transfer__arrow-icon {
     border-top: 1px solid #000;
@@ -1801,12 +1826,6 @@ body {
     height: 10px;
     display: block;
     margin: 0 auto;
-    -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
     pointer-events: none; }
   .transfer__dropdown {
     position: absolute;
@@ -1826,7 +1845,7 @@ body {
       border-bottom: none; }
     .transfer__dropdown-item:hover {
       background-color: rgba(0, 0, 0, 0.2); }
-  .transfer__send-transfer {
+  .transfer__send-transfer, .transfer__ok {
     text-decoration: none;
     background-color: #ffc145;
     color: #404040;
@@ -1834,7 +1853,19 @@ body {
     width: 150px;
     padding: 10px 0;
     border-radius: 7px;
+    text-align: center;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .transfer__send-transfer:hover, .transfer__ok:hover {
+      background-color: orange; }
+  .transfer__success-text {
+    margin-bottom: 30px;
     text-align: center; }
+  .transfer__ok {
+    border: none;
+    cursor: pointer; }
 
 @media (max-width: 1220px) {
   .transfer__container {

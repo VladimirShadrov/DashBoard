@@ -56,7 +56,8 @@
     margin-left: 2px;
   }
 
-  &__user-image {
+  &__user-image,
+  &__user-image-add {
     max-width: 42px;
     max-height: 42px;
     margin: 0 auto;
@@ -66,7 +67,8 @@
     }
   }
 
-  &__user-name {
+  &__user-name,
+  &__add-new {
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
@@ -79,10 +81,6 @@
   &__image,
   &__user-name {
     pointer-events: none;
-
-    &:last-child {
-      pointer-events: visible;
-    }
   }
 
   &__transfer-wrapper {
@@ -134,6 +132,10 @@
     font-size: 11px;
     font-weight: 700;
     color: $blackTextColor;
+
+    & > span {
+      pointer-events: none;
+    }
   }
 
   &__arrow {
@@ -179,6 +181,7 @@
 
   &__loan-slogan {
     text-align: left;
+    pointer-events: none;
   }
 
   &__loan-arrow {
@@ -204,13 +207,25 @@
     align-items: center;
     padding: 10px;
     transition: 0.3s;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
   }
 
   &__modal-transfer,
   &__modal-success {
+    position: relative;
     min-width: 300px;
-    min-height: 320px;
-    padding: 30px 10px 10px;
+    min-height: 340px;
+    padding: 40px 10px 10px;
     background-color: $whiteColor;
     border: 5px solid $cardProgressBarColor;
     border-radius: 25px;
@@ -219,6 +234,14 @@
     align-items: center;
     justify-content: space-between;
     transition: 0.3s;
+  }
+
+  &__modal-transfer {
+    transform: translateY(200%);
+  }
+
+  &__modal-success {
+    min-height: 100px;
   }
 
   &__dropdown-container {
@@ -231,6 +254,10 @@
     cursor: pointer;
   }
 
+  &__dropdown-text {
+    pointer-events: none;
+  }
+
   &__arrow-container {
     position: absolute;
     top: 0;
@@ -239,6 +266,8 @@
     width: 35px;
     height: 35px;
     padding: 12px 0;
+    transform: rotate(-45deg);
+    transition: 0.3s;
     pointer-events: none;
   }
 
@@ -249,8 +278,6 @@
     height: 10px;
     display: block;
     margin: 0 auto;
-    transform: rotate(-45deg);
-    transition: 0.3s;
     pointer-events: none;
   }
 
@@ -278,15 +305,32 @@
     }
   }
 
-  &__send-transfer {
+  &__send-transfer,
+  &__ok {
     text-decoration: none;
-    background-color: rgba(255, 193, 69, 1);
+    background-color: $btnColor;
     color: $blackTextColor;
     font-weight: 700;
     width: 150px;
     padding: 10px 0;
     border-radius: 7px;
     text-align: center;
+    outline: none;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: orange;
+    }
+  }
+
+  &__success-text {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__ok {
+    border: none;
+    cursor: pointer;
   }
 }
 
