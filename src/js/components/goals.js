@@ -5,10 +5,13 @@ export class Goals {
     this.slidesBelt = this.el.querySelector('.goals__row');
     this.slideItem = this.el.querySelectorAll('.goals__item');
     this.btnNext = this.el.querySelector('.goals__arrow');
+    this.overlay = this.el.querySelector('.goals__overlay');
+    this.modalHTML = createModalHTML();
+    this.goalIcon;
 
     this.init();
     this.renderSlides(this.slides);
-    this.setWidth();
+    // this.setWidth();
     this.moveItemToEnd();
     this.setTransparencySlides();
   }
@@ -19,7 +22,9 @@ export class Goals {
 
   renderSlides(slides) {
     const slidesHTML = createSlidesHtml(slides);
+    this.slidesBelt.innerHTML = '';
     this.slidesBelt.insertAdjacentHTML('afterbegin', slidesHTML);
+    this.setWidth();
   }
 
   getSlides() {
@@ -28,7 +33,7 @@ export class Goals {
   }
 
   setWidth() {
-    this.slideItem = this.el.querySelectorAll('.goals__item');
+    this.slideItem = this.getSlides();
     this.slidesBelt.style.width = `calc((33.33% * ${this.slideItem.length})`;
     this.slideItem.forEach((slide) => {
       slide.style.width = `calc(100% / ${this.slideItem.length} - 7.5px)`;
@@ -60,6 +65,7 @@ export class Goals {
     }
 
     this.cloneFirstSlide();
+
     this.setWidth();
     let stepLength = `${this.getSlideWidth() + 15}px`;
     this.slidesBelt.style.transition = '0.3s';
@@ -68,8 +74,9 @@ export class Goals {
   }
 
   cloneFirstSlide() {
-    let slides = this.getSlides();
-    let clone = slides[0].cloneNode(true);
+    const slides = this.getSlides();
+
+    const clone = slides[0].cloneNode(true);
     this.slidesBelt.style.transition = 'none';
     this.slidesBelt.appendChild(clone);
   }
@@ -82,12 +89,81 @@ export class Goals {
       this.slidesBelt.removeChild(this.slidesBelt.lastElementChild);
       this.setWidth();
       this.setTransparencySlides();
+      this.btnNext.style.pointerEvents = 'auto';
 
       setTimeout(() => {
         this.slidesBelt.style.transition = '0.3s';
       }, 0);
-      this.btnNext.style.pointerEvents = 'auto';
     });
+  }
+
+  getItem(way) {
+    const item = this.el.querySelector(way);
+    return item;
+  }
+
+  renderGoaslModal() {
+    this.overlay.insertAdjacentHTML('afterbegin', this.modalHTML);
+    this.overlay.style.opacity = '1';
+    this.overlay.style.zIndex = '1';
+  }
+
+  showGoalsModal() {
+    const modal = this.getItem('.goals__modal');
+    setTimeout(() => {
+      modal.style.transform = 'translateY(0)';
+    }, 50);
+  }
+
+  hideGoalsModal() {
+    const modal = this.getItem('.goals__modal');
+
+    modal.style.transform = 'translateY(200%)';
+    this.overlay.style.opacity = '0';
+    this.overlay.style.zIndex = '-1';
+
+    setTimeout(() => {
+      this.overlay.innerHTML = '';
+    }, 500);
+  }
+
+  selectImage() {
+    const images = this.el.querySelectorAll('.goals__image-link');
+    images.forEach((image) => {
+      image.addEventListener('click', (event) => {
+        images.forEach((image) =>
+          image.classList.remove('goals__image-link-active')
+        );
+        event.target.classList.add('goals__image-link-active');
+        let picture = event.target.firstElementChild.getAttribute('src');
+        this.goalIcon = picture;
+      });
+    });
+  }
+
+  createNewGoal() {
+    const price =
+      this.el.querySelector('.goals__data-entry-amount').value || '120';
+    const amount = parseFloat(price).toLocaleString();
+    const title =
+      this.el.querySelector('.goals__data-entry-name').value || 'Holidays';
+
+    return {
+      price: amount,
+      date: '12/20/20',
+      image: this.goalIcon || './images/holidays.svg',
+      title,
+    };
+  }
+
+  clearInputs() {
+    const price = this.el.querySelector('.goals__data-entry-amount');
+    const title = this.el.querySelector('.goals__data-entry-name');
+    price.value = '';
+    title.value = '';
+    this.el
+      .querySelectorAll('.goals__image-link')
+      .forEach((item) => item.classList.remove('goals__image-link-active'));
   }
 }
 
@@ -96,6 +172,28 @@ function goalsClickHandler(event) {
 
   if (event.target.classList.contains('goals__arrow')) {
     this.showNextSlide();
+  }
+
+  if (event.target.classList.contains('goals__button')) {
+    this.renderGoaslModal();
+    this.showGoalsModal();
+    this.selectImage();
+  }
+
+  if (event.target.classList.contains('goals__add-goal-btn')) {
+    const newGoal = this.createNewGoal();
+    this.clearInputs();
+    this.hideGoalsModal();
+    this.slidesBelt.style.transition = 'none';
+    this.slides.push(newGoal);
+    this.renderSlides(this.slides);
+    this.setTransparencySlides();
+
+    setTimeout(() => (this.slidesBelt.style.transition = '0.3s'), 50);
+  }
+
+  if (event.target.classList.contains('goals__overlay')) {
+    this.hideGoalsModal();
   }
 }
 
@@ -120,5 +218,51 @@ function createSlidesHtml(slides) {
     `;
   });
 
+  return html;
+}
+
+function createModalHTML() {
+  const html = `
+  <div class="goals__modal">
+    <p class="goals__modal-text">Enter the goal amount</p>
+    <input
+      type="text"
+      class="goals__data-entry-amount"
+      data-name="amount"
+    />
+    <p class="goals__modal-text">Select a picture</p>
+    <div class="goals__pictures-container">
+      <a href="#" class="goals__image-link">
+        <img
+          src="./images/holidays.svg"
+          alt="Holidays"
+          class="goals__image"
+        />
+      </a>
+      <a href="#" class="goals__image-link">
+        <img
+          src="./images/renovation.svg"
+          alt="Renovation"
+          class="goals__image"
+        />
+      </a>
+      <a href="#" class="goals__image-link">
+        <img
+          src="./images/xbox.svg"
+          alt="Xbox"
+          class="goals__image"
+        />
+      </a>
+    </div>
+    <p class="goals__modal-text">Enter the goal name</p>
+    <input
+      type="text"
+      class="goals__data-entry-name"
+      data-name="amount"
+    />
+    <a href="#" class="goals__add-goal-btn">Add the goal</a>
+  </div>
+
+  `;
   return html;
 }
