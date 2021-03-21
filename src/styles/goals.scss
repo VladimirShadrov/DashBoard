@@ -3,7 +3,7 @@
 .goals {
   padding-left: 32.26px;
   padding-top: 14px;
-  margin-bottom: 47px;
+  margin-bottom: 12px;
   position: relative;
 
   &__title-container {
@@ -32,25 +32,27 @@
   }
 
   &__wrapper {
-    width: 100%;
+    padding: 3px 15px 35px 15px;
+    overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 30px);
   }
 
   &__row {
     display: flex;
     justify-content: flex-start;
+    transition: 0.3s;
   }
 
   &__item {
     padding: 13px 24px;
+    padding-right: 12px;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06),
       0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border-radius: 28px;
-    margin-right: 14.5px;
+    margin-right: 15px;
     width: calc(33.33% - 7.5px);
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &__item-expense {
@@ -85,12 +87,21 @@
     position: absolute;
     right: -18px;
     top: calc(50% + 9.63px);
+
+    & > img {
+      pointer-events: none;
+    }
   }
 }
 
 @media (max-width: 1300px) {
   .goals__item {
     padding: 12px;
+  }
+
+  .goals__item-goal {
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 
